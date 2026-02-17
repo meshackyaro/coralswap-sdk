@@ -1,0 +1,10 @@
+src/
+tests/
+coverage/
+.eslintrc*
+eslint.config.js
+jest.config.js
+tsconfig.json
+*.sh
+.env*
+*.log
