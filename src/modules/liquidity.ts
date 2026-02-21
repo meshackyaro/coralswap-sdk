@@ -147,6 +147,7 @@ export class LiquidityModule {
     owner: string,
   ): Promise<LPPosition> {
     const pair = this.client.pair(pairAddress);
+    const reserves = await pair.getReserves();
     const [reserves] = await Promise.all([
       pair.getReserves(),
       pair.getTokens(),
