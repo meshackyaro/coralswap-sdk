@@ -12,7 +12,13 @@ import {
 import { PRECISION, DEFAULTS } from '../config';
 import {
   TransactionError,
-} from "../errors";
+} from '../errors';
+import {
+  validateAddress,
+  validatePositiveAmount,
+  validateSlippage,
+  validateDistinctTokens,
+} from '../utils/validation';
 
 /**
  * Swap module -- builds, quotes, and executes token swaps.

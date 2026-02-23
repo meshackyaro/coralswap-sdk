@@ -90,8 +90,6 @@ export {
   withRetry,
   isRetryable,
   sleep,
-  EventParser,
-  EVENT_TOPICS,
   validateAddress,
   validatePositiveAmount,
   validateNonNegativeAmount,

@@ -9,7 +9,6 @@ import { calculateRepayment, validateFeeFloor } from '../contracts/flash-receive
 import { FlashLoanError, TransactionError } from '../errors';
 import { validateAddress, validatePositiveAmount } from '../utils/validation';
 
-
 /**
  * Flash Loan module -- first-class flash loan support for CoralSwap.
  *

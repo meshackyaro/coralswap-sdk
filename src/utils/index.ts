@@ -37,8 +37,6 @@ export {
 
 export { Fraction, Percent, Rounding } from './math';
 
-export { EventParser, EVENT_TOPICS } from './events';
-
 export {
   validateAddress,
   validatePositiveAmount,
@@ -46,4 +44,3 @@ export {
   validateSlippage,
   validateDistinctTokens,
 } from './validation';
-

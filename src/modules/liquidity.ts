@@ -15,7 +15,6 @@ import {
   validateDistinctTokens,
 } from '../utils/validation';
 
-
 /**
  * Liquidity module -- manages LP positions in CoralSwap pools.
  *
@@ -97,7 +96,6 @@ export class LiquidityModule {
     validatePositiveAmount(request.amountBDesired, 'amountBDesired');
     validateNonNegativeAmount(request.amountAMin, 'amountAMin');
     validateNonNegativeAmount(request.amountBMin, 'amountBMin');
-    
     if (request.amountAMin > request.amountADesired) {
       throw new ValidationError('amountAMin must not exceed amountADesired', {
         amountAMin: request.amountAMin.toString(),
