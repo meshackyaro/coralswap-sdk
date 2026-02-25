@@ -28,6 +28,8 @@ export {
   exceedsBudget,
 } from './simulation';
 
+export type { SimulationResult, SimulationResourceEstimate } from './simulation';
+
 export {
   withRetry,
   isRetryable,
