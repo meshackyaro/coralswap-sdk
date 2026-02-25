@@ -1,4 +1,4 @@
-import { Address, StrKey, hash, xdr } from "@stellar/stellar-sdk";
+import { Address, StrKey, hash, xdr } from '@stellar/stellar-sdk';
 
 /**
  * Address utilities for Stellar/Soroban address handling.
@@ -63,7 +63,7 @@ export function isNativeToken(identifier: string): boolean {
     return false;
   }
 
-  return upper === "XLM" || upper === "NATIVE";
+  return upper === 'XLM' || upper === 'NATIVE';
 }
 
 /**

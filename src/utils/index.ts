@@ -1,5 +1,6 @@
 export {
   toSorobanAmount,
+  parseTokenAmount,
   fromSorobanAmount,
   formatAmount,
   toBps,
@@ -20,7 +21,7 @@ export {
   truncateAddress,
   toScAddress,
   getPairAddress,
-} from "./addresses";
+} from './addresses';
 
 export {
   isSimulationSuccess,
@@ -28,6 +29,8 @@ export {
   getResourceEstimate,
   exceedsBudget,
 } from "./simulation";
+
+export type { SimulationResult, SimulationResourceEstimate } from './simulation';
 
 export {
   withRetry,
@@ -37,4 +40,12 @@ export {
   DEFAULT_RETRY_CONFIG,
 } from "./retry";
 
-export { Fraction, Percent, Rounding } from "./math";
+export { Fraction, Percent, Rounding } from './math';
+
+export {
+  validateAddress,
+  validatePositiveAmount,
+  validateNonNegativeAmount,
+  validateSlippage,
+  validateDistinctTokens,
+} from './validation';
