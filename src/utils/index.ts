@@ -9,23 +9,25 @@ export {
   safeDiv,
   minBigInt,
   maxBigInt,
-} from './amounts';
+} from "./amounts";
 
 export {
   isValidPublicKey,
   isValidContractId,
   isValidAddress,
+  isNativeToken,
   sortTokens,
   truncateAddress,
   toScAddress,
-} from './addresses';
+  getPairAddress,
+} from "./addresses";
 
 export {
   isSimulationSuccess,
   getSimulationReturnValue,
   getResourceEstimate,
   exceedsBudget,
-} from './simulation';
+} from "./simulation";
 
 export {
   withRetry,
@@ -33,6 +35,6 @@ export {
   sleep,
   RetryConfig,
   DEFAULT_RETRY_CONFIG,
-} from './retry';
+} from "./retry";
 
-export { Fraction, Percent, Rounding } from './math';
+export { Fraction, Percent, Rounding } from "./math";
